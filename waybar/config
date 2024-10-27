@@ -5,7 +5,7 @@
     "margin-right": 10,
     "height" : 28,
     "modules-left": [
-      "hyprland/workspaces",
+      "hyprland/workspaces"
     ],
     "modules-center": [
       "hyprland/window"
@@ -18,44 +18,50 @@
     "memory",
     "network",
     "temperature",
-    "clock",
+    "clock"
     ],
+
     "hyprland/window": {
       "format": "{}",
       "max-length": 35,
       "rewrite": {
         "": "Hyprland"
       },
-      "separate-outputs": true,
+      "separate-outputs": true
     },
+
     "hyprland/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
       "format-icons": {
-        "active": " ",
+        "active": ""
       },
       "sort-by-number": true,
       "persistent-workspaces": {
-        "*": 6,
         "HDMI-A-1": 6
-      },
+      }
     },
+
     "clock": {
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
       "format-alt": "{:%Y-%m-%d}"
     },
+
     "cpu": {
       "format": " {usage}%",
       "tooltip": false
     },
+
     "memory": {
       "format": "{}% "
     },
+
     "temperature": {
       "critical-threshold": 80,
       "format": "{icon} {temperatureC}°C",
       "format-icons": ["", "", ""]
     },
+
     "battery": {
       "states": {
         "warning": 30,
@@ -68,6 +74,7 @@
       "format-alt": "{time} {icon}",
       "format-icons": ["", "", "", "", ""]
     },
+
     "network": {
       "format-wifi": "  {signalStrength}%",
       "format-ethernet": "{cidr} ",
@@ -76,6 +83,7 @@
       "format-disconnected": " ⚠ ",
       "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
+
     "pulseaudio": {
       "format": "{icon}  {volume}%",
       "format-bluetooth": "{volume}% {icon} {format_source}",
@@ -91,5 +99,5 @@
         "default": ["", "", ""]
       },
       "on-click": "pavucontrol"
-    },
+    }
 }
