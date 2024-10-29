@@ -17,7 +17,7 @@ screenshots in $HOME/Изорбражения/screenshot
 
 1. zsh - best shell
 
-        Will be soon
+        [Link to install](https://habr.com/ru/articles/516004/)
 
 ## Programs that i need
 
