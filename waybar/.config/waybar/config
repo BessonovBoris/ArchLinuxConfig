@@ -13,11 +13,8 @@
     "modules-right": [
     "hyprland/language",
     "pulseaudio",
-    "cpu",
     "battery",
-    "memory",
     "network",
-    "temperature",
     "clock"
     ],
 
@@ -38,7 +35,8 @@
       },
       "sort-by-number": true,
       "persistent-workspaces": {
-        "HDMI-A-1": 6
+        "HDMI-A-1": 6,
+	"eDP-1": 6
       }
     },
 

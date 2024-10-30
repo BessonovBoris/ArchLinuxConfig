@@ -101,6 +101,10 @@ button:hover {
   color: @text;
 }
 
+#language {
+  color: @text;
+}
+
 .modules-right,
 .modules-left,
 .modules-center {
