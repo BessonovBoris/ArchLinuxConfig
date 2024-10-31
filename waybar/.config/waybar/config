@@ -20,9 +20,10 @@
 
     "hyprland/window": {
       "format": "{}",
-      "max-length": 35,
+      "max-length": 120,
       "rewrite": {
-        "": "Hyprland"
+        "": "Hyprland",
+        "(.*) — Zen Browser": " $1"
       },
       "separate-outputs": true
     },
@@ -31,12 +32,12 @@
       "format": "{icon}",
       "on-click": "activate",
       "format-icons": {
-        "active": ""
+	      "3": ""
       },
       "sort-by-number": true,
       "persistent-workspaces": {
         "HDMI-A-1": 6,
-	"eDP-1": 6
+	      "eDP-1": 6
       }
     },
 

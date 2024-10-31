@@ -37,7 +37,7 @@ button:hover {
 #workspaces button {
   padding: 0 10px;
   background-color: transparent;
-  color: @rosewater;
+  color: @text;
 }
 
 #workspaces button:hover {
@@ -50,8 +50,14 @@ button:hover {
   box-shadow: inset 0 -3px #ffffff;
 }
 
+#workspaces button.active {
+  color: @green;
+}
+
 #workspaces button.urgent {
   background-color: #eb4d4b;
+  border-radius: 1em;
+  color: @text;
 }
 
 #mode {
