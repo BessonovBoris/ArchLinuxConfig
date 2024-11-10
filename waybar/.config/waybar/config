@@ -3,7 +3,7 @@
     "margin-top" : 2,
     "margin-left": 10,
     "margin-right": 10,
-    "height" : 28,
+    "height" : 45,
     "modules-left": [
       "hyprland/workspaces"
     ],
@@ -11,34 +11,39 @@
       "hyprland/window"
     ],
     "modules-right": [
-    "hyprland/language",
-    "pulseaudio",
-    "battery",
-    "network",
-    "clock"
+      "hyprland/language",
+      "pulseaudio",
+      "battery",
+      "network",
+      "clock"
     ],
 
     "hyprland/window": {
       "format": "{}",
-      "max-length": 120,
+      "max-length": 60,
       "rewrite": {
         "": "Hyprland",
-        "(.*) — Zen Browser": " $1"
+        "(.*) Zen Browser.*": " $1",
+        "(.*) - Code.*": " $1"
       },
       "separate-outputs": true
     },
 
     "hyprland/workspaces": {
-      "format": "{icon}",
-      "on-click": "activate",
-      "format-icons": {
-	      "3": ""
-      },
-      "sort-by-number": true,
+      "format": "<sub>{icon}</sub>\n{windows}",
+      "active-only": false,
+
       "persistent-workspaces": {
-        "HDMI-A-1": 6,
-	      "eDP-1": 6
-      }
+          "*": 10
+       },
+
+       "window-rewrite": {
+        "class<.*Zen.*>": "",
+        "class<.*Code.*>": "",
+        "class<.*kitty.*>": "",
+        "class<.*Telegram.*>": ""
+      },
+      "window-rewrite-default": ""
     },
 
     "clock": {
@@ -76,7 +81,7 @@
 
     "network": {
       "format-wifi": "  {signalStrength}%",
-      "format-ethernet": "{cidr} ",
+      "format-ethernet": "{cidr} ",
       "tooltip-format": "{ifname} via {gwaddr} ",
       "format-linked": "{ifname} (No IP) ",
       "format-disconnected": " ⚠ ",

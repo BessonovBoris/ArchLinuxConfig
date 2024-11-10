@@ -11,20 +11,6 @@
 {
     // Workspaces
     "hyprland/workspaces" : {
-        "on-click": "activate",
-        "active-only": false,
-        "all-outputs": true,
-        "format": "{}",
-        "format-icons": {
-			"urgent": "",
-			"active": "",
-			"default": ""
-        },
-        "persistent-workspaces": {
-            // START WORKSPACES
-    "*": 5
-            // END WORKSPACES
-        }       
     },
 
     // Taskbar
